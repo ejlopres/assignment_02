@@ -69,9 +69,15 @@ HOW TO BUILD IT
 # package called display installed on this machine".
 
 from .extract import get_raw_sales_data
-from .transform import calculate_total_revenue, clean_sales_data
-from .display import print_sales_table
-
+from .transform import (
+    calculate_total_revenue,
+    clean_sales_data,
+    find_top_entry,
+    summarize_by_day,
+    summarize_by_item,
+)
+from .display import print_day_table, print_item_table, print_sales_table
+ 
 
 # `__all__` is a list of strings naming the public API. It does two jobs.
 #
@@ -86,8 +92,13 @@ from .display import print_sales_table
 # a broken promise; a name imported above but missing here is a feature nobody can
 # find.
 __all__ = [
-   "get_raw_sales_data",
+    "get_raw_sales_data",
     "calculate_total_revenue",
     "clean_sales_data",
+    "find_top_entry",
+    "summarize_by_day",
+    "summarize_by_item",
+    "print_day_table",
+    "print_item_table",
     "print_sales_table",
 ]
