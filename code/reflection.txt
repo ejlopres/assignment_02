@@ -1,6 +1,9 @@
-Write your reflection here.
-
-See reflection.md for what makes a good reflection — be specific, use the
-terminology from this assignment (package, module, ETL, coercion, public API,
-relative import, accumulator, group by, unit vs. integration test), and make it
-actionable.
+I was able to learn much more about packages throughout this assignment.  By splitting the work into an ETL pipeline across the three modules and combining 
+them all in the init.py file, I was able to write all the code seperately and have it complete a common task.  I was also able to use the public API
+and relative imports in this same init.py file.  This led to a cleaner code space for the different finance and marketing etc. sections.  I was able to
+add summarize_by_item and find_top_entry to the transform.py file which allowed the marketing section to work, without changing the finance report.  All of
+this was hidden on the backend which was convenient and led to a more organized code area.  I had a bug that looked like broken logic in the clean_sales_data
+part of this assignment.  the function wouldnt pass the tests after I kept re-reading it.  This was because I hadnt fully written th eother three functions 
+though and that it is why it was failing the tests.  This took me a little while to figure out, but once I did it made much more sense.  I also need a bit 
+more practice on writing the seed-handling block ob my own.  I had to keep referencing the finance report to get it to work, but I would like to be able
+to write it on my own in the future.  This was a productive assignment and I look forward to learning more about python.
